@@ -79,7 +79,7 @@
           echo '<p><a href="' . $url . '" target="_blank">' . htmlspecialchars($url) . '</a></p>';
           echo '<div class="image-actions">';
           echo '<button class="copy-btn" onclick="copyToClipboard(\'' . $url . '\')"><i class="fa fa-copy"></i> Копировать</button>';
-          if ($clientIp === '31.42.65.78') {
+          if ($clientIp === '127.0.0.1') {
             echo '<button class="delete-btn" onclick="confirmDelete(\'' . intval($row['id']) . '\')"><i class="fa fa-trash"></i> Удалить</button>';
           }
           echo '</div></div></div>';
